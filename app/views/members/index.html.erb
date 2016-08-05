@@ -1,2 +1,10 @@
-<h1>Members#index</h1>
-<p>Find me in app/views/members/index.html.erb</p>
+<h1>Family Planner</h1>
+
+<h2><%= link_to "Add A NEW Family Member", new_member_path %></h2>
+
+<% @members.each do |member| %>
+<h3><%= link_to member.name, member_path(member) %> | <%= link_to "EDIT", edit_member_path(member) %> | <%= link_to "DELETE", member_path(member),
+              method: :delete,
+              data: { confirm: "Are you sure you want to delete this Family Member?" } %></h3>
+<img src="<%= member.img_url %>" width="200px">
+<% end %>
