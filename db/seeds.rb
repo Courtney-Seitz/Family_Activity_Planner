@@ -11,7 +11,7 @@ Task.destroy_all
 current_member = Member.create!({
   name: "Pookie McPookieson",
   date_of_birth: "10/10/2010",
-  img_url: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Panda_Cub_from_Wolong,_Sichuan,_China.JPG",
+  img_url: "https://aos.iacpublishinglabs.com/question/aq/1400px-788px/pandas-live_64dff22c2fe56e9.jpg?domain=cx.aos.ask.com",
   email: "pandabear@pandas.org",
   phone: "1-800-pandariffic"
   })
