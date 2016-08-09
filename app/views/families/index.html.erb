@@ -1,0 +1,9 @@
+<h2>Families</h2>
+
+  <h2><%= link_to "Add a New Family", new_family_path %></h2>
+
+  <% @families.each do |family| %>
+      <h3>Family: <%= link_to family.name, family_path(family) %> | <%= link_to "EDIT", edit_family_path(family) %> | <%= link_to 'DELETE Family', family_path(family),
+              method: :delete,
+              data: { confirm: 'Are you certain you want to delete this family?' } %></h3>
+  <% end %>
