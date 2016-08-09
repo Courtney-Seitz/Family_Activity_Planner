@@ -5,7 +5,7 @@ class CreateTasks < ActiveRecord::Migration[5.0]
       t.string :location
       t.string :date
       t.string :note
-      t.references(:member, index: true)
+      t.references :member, index: true, foreign_key: true
 
       t.timestamps
     end

@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-root 'members#index'
+
+root 'families#index'
+
+resources :families do
+  resources :members
+end
 
 resources :members do
   resources :tasks
