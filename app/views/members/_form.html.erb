@@ -1,4 +1,5 @@
-
+<%= form_for([@family, @member]) do |f| %>
+  <p><%= @family.errors.full_messages.first if @member.errors.any? %></p>
 
 
 <%= f.label :date_of_birth %>
@@ -12,3 +13,7 @@
 
 <%= f.label :phone %>
 <%= f.text_field :phone %>
+
+<%= f.submit %>
+
+<% end %>

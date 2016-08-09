@@ -1,2 +1,5 @@
+<h2>Edit Household Member</h2>
 
 <%= render 'form' %>
+
+<%= link_to 'DELETE', family_member_path(@family, @member), method: :delete, class: 'delete' %>
