@@ -1,8 +1,13 @@
 
-<h2><%= link_to "BACK to Families", families_path %></h2>
+<h3><%= link_to "Family Activity Planner Home", families_path %></h3>
+<h3><%= link_to "BACK to the " + @family.name + " Family Members", family_path(@family) %></h3>
 
-<h2><%= @member.name %></h2>
-<h3>Member of Family <%= @family.name %></h3>
+<h2><%= @member.name %> | <%= link_to "EDIT", edit_family_member_path(@member) %></h2>
+<h4>(Member of Family <%= @family.name %>)</h4>
+<h5>Date of Birth: <%= @member.date_of_birth %></h5>
+<h5>Email: <%= @member.email %></h5>
+<h5>Phone: <%= @member.phone %></h5>
+
 <img src="<%= @member.img_url %>" width="400px">
 
 <h3>Activity or Task <%= link_to "(Add NEW)", new_member_task_path(@member) %></h3>
@@ -18,5 +23,5 @@
 
   <p><%= link_to "EDIT", edit_member_task_path(@member, task) %> | <%= link_to "DELETE", member_task_path(@member, task),
           method: :delete,
-          data: { confirm: "Are you certain?" } %></p>
+          data: { confirm: "Are you sure?" } %></p>
 <% end %>
