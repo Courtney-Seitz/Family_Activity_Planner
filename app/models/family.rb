@@ -1,4 +1,4 @@
 class Family < ApplicationRecord
-  has_many :mambers, dependent: :destroy
+  has_many :members, dependent: :destroy
   validates :name, presence: true
 end
