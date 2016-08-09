@@ -1,0 +1,13 @@
+<h2><%= link_to "Family Planner", members_path %></h2>
+<h3>Family Member: <%= @member.name %></h3>
+
+<h3><%= link_to "Add a NEW Activity or Task", new_member_task_path(@member) %></h3>
+
+<div>
+  <% @member.tasks.each do |task| %>
+    <p><%= link_to task.description, member_task_path(@member, task) %>  <%= link_to "EDIT", edit_member_task_path(@member, task) %></p>
+    <p><%= link_to "DELETE", member_task_path(@member, task),
+            method: :delete,
+            data: { confirm: "Are You Sure?" } %></p>
+  <% end %>
+</div>
