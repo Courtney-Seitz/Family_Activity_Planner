@@ -1,5 +1,5 @@
 <%= form_for([@member, @task]) do |f| %>
-  <p><%= @member.errors.full_messages.first if @task.errors.any? %></p>
+  <%= @member.errors.full_messages.first if @task.errors.any? %>
 
   <%= f.label :description %>
   <br/>
