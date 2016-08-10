@@ -1,6 +1,7 @@
 <h2><%= link_to "Family Activity Planner Home", families_path %></h2>
+
 <h2>Edit Activity or Task</h2>
 
 <%= render 'form' %>
-
-<%= link_to 'DELETE', member_task_path(@member, @task), method: :delete, class: 'delete' %>
+<br/>
+<%= link_to 'DELETE Activity or Task', member_task_path(@member, @task), method: :delete, class: 'delete' %>

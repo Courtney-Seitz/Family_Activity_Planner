@@ -2,3 +2,5 @@
 <h2>Add a New Family Member to the <%= @family.name %> Family</h2>
 
 <%= render 'form' %>
+
+<p><%= link_to 'BACK to ' + @family.name + ' Family', family_path(@family) %></p>
