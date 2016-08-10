@@ -8,12 +8,11 @@
 <h5>Date of Birth: <%= @member.date_of_birth %></h5>
 <h5>Email: <%= @member.email %></h5>
 <h5>Phone: <%= @member.phone %></h5>
-
 <img src="<%= @member.img_url %>" width="400px">
 </div>
 
 <div class="tasks">
-<h3>Activity or Task <%= link_to "(Add NEW)", new_member_task_path(@member) %></h3>
+<h3>Activity or Task <%= link_to "(Add NEW Activity or Task)", new_member_task_path(@member) %></h3>
 
 <% @member.tasks.each do |task| %>
   <p>What: <%= task.description %></p>

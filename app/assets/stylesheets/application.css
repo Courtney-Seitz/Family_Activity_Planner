@@ -13,7 +13,17 @@
 *= require_tree .
 *= require_self
 */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Taviraj'), local('Taviraj-Regular'), url(https://fonts.gstatic.com/s/taviraj/v1/8cQHUhQhQnNwMS_YH00Y1gLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 
+body {
+    font-family: 'Taviraj';
+}
 
 #title {
   text-align: center;
@@ -34,6 +44,43 @@
   border-style: solid;
 }
 
+.facts h2 {
+  margin: 5px;
+}
+
+.facts h4 {
+  margin: 10px;
+}
+
+.facts h5 {
+  margin: 5px;
+}
+
 .tasks {
   border-style: solid;
+}
+
+.tasks h3 {
+  margin: 5px;
+}
+
+.tasks p {
+  margin: 5px;
+}
+
+img {
+  border-style: solid;
+}
+
+input {
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+  border-radius: 4px;
+}
+
+input:focus,
+input.focus {
+ box-shadow: inset 1px 1px 2px 0 #c9c9c9;
 }
