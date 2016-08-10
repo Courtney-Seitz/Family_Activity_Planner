@@ -2,6 +2,7 @@
 <h3><%= link_to "Family Activity Planner Home", families_path %></h3>
 <h3><%= link_to "BACK to the " + @family.name + " Family Members", family_path(@family) %></h3>
 
+<div class="facts">
 <h2><%= @member.name %> | <%= link_to "EDIT", edit_family_member_path(@member) %></h2>
 <h4>(Member of Family <%= @family.name %>)</h4>
 <h5>Date of Birth: <%= @member.date_of_birth %></h5>
@@ -9,7 +10,9 @@
 <h5>Phone: <%= @member.phone %></h5>
 
 <img src="<%= @member.img_url %>" width="400px">
+</div>
 
+<div class="tasks">
 <h3>Activity or Task <%= link_to "(Add NEW)", new_member_task_path(@member) %></h3>
 
 <% @member.tasks.each do |task| %>
@@ -25,3 +28,4 @@
           method: :delete,
           data: { confirm: "Are you sure?" } %></p>
 <% end %>
+</div>

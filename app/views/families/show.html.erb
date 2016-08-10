@@ -8,7 +8,7 @@
 <h3><%= link_to "Add a NEW FAMILY MEMBER to the " + @family.name + " Family", new_family_member_path(@family) %></h3>
 </div>
 
-<div>
+<div class="member">
   <% @family.members.each do |member| %>
     <p>Family Member: <%= link_to member.name, family_member_path(@family, member) %> | <%= link_to "EDIT", edit_family_member_path(@family, member) %> | <%= link_to "DELETE", family_member_path(@family, member),
             method: :delete,

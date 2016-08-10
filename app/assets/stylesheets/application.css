@@ -18,9 +18,22 @@
 #title {
   text-align: center;
   font-size: 50px;
+  border-style: solid;
 
 }
 
 .container {
-  
+
+}
+
+.member {
+  border-style: solid;
+}
+
+.facts {
+  border-style: solid;
+}
+
+.tasks {
+  border-style: solid;
 }
