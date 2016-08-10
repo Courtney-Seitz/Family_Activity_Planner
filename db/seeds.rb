@@ -51,11 +51,11 @@ current_member = Member.create!({
         })
 
         current_family = Family.create!({
-          name: "Tenderfur"
+          name: "Fluffyfur"
           })
 
         current_member = Member.create!({
-          name: "Fuzzles Tenderfur",
+          name: "Fuzzles Fluffyfur",
           date_of_birth: "10/10/2010",
           img_url: "http://viralpursuit.com/wp-content/uploads/2016/02/cute_baby_panda.jpg",
           email: "pandabear3@pandas.org",
