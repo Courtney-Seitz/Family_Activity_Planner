@@ -1,5 +1,5 @@
 <%= form_for([@family, @member]) do |f| %>
-  <p><%= @family.errors.full_messages.first if @member.errors.any? %></p>
+  <%= @family.errors.full_messages.first if @member.errors.any? %>
 
 
 <%= f.label :name %>
