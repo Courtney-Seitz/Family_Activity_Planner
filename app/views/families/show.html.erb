@@ -1,7 +1,12 @@
+<div>
 <h2><%= link_to "Family Activity Planner Home", families_path %></h2>
+</div>
+
+<div>
 <h3>Family: <%= @family.name %></h3>
 
 <h3><%= link_to "Add a NEW FAMILY MEMBER to the " + @family.name + " Family", new_family_member_path(@family) %></h3>
+</div>
 
 <div>
   <% @family.members.each do |member| %>
