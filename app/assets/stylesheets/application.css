@@ -34,7 +34,7 @@ body {
 }
 
 .facts h4 {
-  margin: 10px;
+  margin: 5px;
 }
 
 .facts h5 {
@@ -85,6 +85,6 @@ form {
   margin:10px;
 }
 
-p {
+p#member {
   padding: 5px;
 }

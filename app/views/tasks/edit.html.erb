@@ -3,7 +3,7 @@
 <h2>Edit Activity or Task</h2>
 
 <%= render 'form' %>
-<br/>
-<p><%= link_to 'DELETE Activity or Task', member_task_path(@member, @task), method: :delete, class: 'delete' %></p>
 
 <p><%= link_to 'BACK to ' + @member.name, member_path(@member) %></p>
+
+<p><%= link_to 'DELETE Activity or Task', member_task_path(@member, @task), method: :delete, class: 'delete' %></p>
