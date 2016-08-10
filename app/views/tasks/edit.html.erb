@@ -4,4 +4,6 @@
 
 <%= render 'form' %>
 <br/>
-<%= link_to 'DELETE Activity or Task', member_task_path(@member, @task), method: :delete, class: 'delete' %>
+<p><%= link_to 'DELETE Activity or Task', member_task_path(@member, @task), method: :delete, class: 'delete' %></p>
+
+<p><%= link_to 'BACK to ' + @member.name, member_path(@member) %></p>

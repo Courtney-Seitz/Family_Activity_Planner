@@ -3,3 +3,5 @@
 <h2>Add a New Activity or Task for <%= @member.name %></h2>
 
 <%= render 'form' %>
+
+<p><%= link_to 'BACK to ' + @member.name, member_path(@member) %></p>
